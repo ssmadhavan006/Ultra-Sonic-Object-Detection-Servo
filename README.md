@@ -42,5 +42,5 @@ More details in [`components.txt`](./components.text)
 * **Arduino Servo library** – drives the SG90 from a single PWM pin.  
 * **TinkerCAD Circuits** schematic ([`ultra_sonic_object_detection.png`](./ultra_sonic_object_detection.png)) – quick virtual test-bed.  
 * **USB CDC Serial Monitor** – lightweight telemetry channel for live distance read-outs.
-* 
+ 
 ---
