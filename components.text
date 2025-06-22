@@ -1,0 +1,9 @@
+🧾 Components Used
+
+| Component                 | Quantity | Purpose                                  |
+|---------------------------|----------|------------------------------------------|
+| Arduino Uno               | 1        | Main microcontroller                     |
+| Ultrasonic Sensor HC-SR04 | 1        | Detect object distance                   |
+| Servo Motor (SG90)        | 1        | Actuator for movement                    |
+| Jumper Wires              | ~8       | Connections between modules              |
+| USB Cable (Type-B)        | 1        | Upload code & power Arduino              |
