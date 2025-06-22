@@ -22,7 +22,7 @@ Below is the wiring schematic for this project:
 
 ## 🔧 Components Used
 
-More details in [`components.txt`](./components.txt)
+More details in [`components.txt`](./components.text)
 
 ---
 
