@@ -26,8 +26,21 @@ More details in [`components.txt`](./components.text)
 
 ---
 
-## 💾 Arduino Code
+## Noteworthy techniques
 
-The full Arduino sketch is in [`object_detection.ino`](./object_detection.ino)
+| Technique | Why it’s interesting |
+|-----------|---------------------|
+| Continuous polling inside `loop()` &rarr; mirrors the browser [**event loop**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop) | Shows how MCU firmware uses the same non-blocking update model web devs rely on. |
+| Linear range conversion with `map()` | Compresses the 10-bit ADC range (0-1023) to the servo’s 0-180 ° sweep in one line. |
+| Timing distance with `pulseIn()` | Reads echo pulse width in µs, converts to cm using the speed-of-sound constant. |
+| Single-supply power + common ground plane | Cuts servo jitter and false echoes without extra regulators. |
 
+---
+
+## Non-obvious tech & libs
+
+* **Arduino Servo library** – drives the SG90 from a single PWM pin.  
+* **TinkerCAD Circuits** schematic ([`ultra_sonic_object_detection.png`](./ultra_sonic_object_detection.png)) – quick virtual test-bed.  
+* **USB CDC Serial Monitor** – lightweight telemetry channel for live distance read-outs.
+* 
 ---
